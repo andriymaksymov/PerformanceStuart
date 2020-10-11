@@ -7,7 +7,15 @@ Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "SQLDashboard", "SQLDashboar
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E46B18D3-67A3-42BF-961F-042E17C560C8}"
 	ProjectSection(SolutionItems) = preProject
-		Query Sammlung.sql = Query Sammlung.sql
+		Working with tempdb in SQL Server 2005 - Microsoft Docs.url = Working with tempdb in SQL Server 2005 - Microsoft Docs.url
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Query", "Query", "{D98CBEAF-B348-443F-B17C-AC2A8B8212DD}"
+	ProjectSection(SolutionItems) = preProject
+		Query\DatabaseUsage.sql = Query\DatabaseUsage.sql
+		Query\ServerDashboard.sql = Query\ServerDashboard.sql
+		Query\TempdbDashboard.sql = Query\TempdbDashboard.sql
+		Query\UserDashboard.sql = Query\UserDashboard.sql
 	EndProjectSection
 EndProject
 Global
@@ -28,6 +36,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D98CBEAF-B348-443F-B17C-AC2A8B8212DD} = {E46B18D3-67A3-42BF-961F-042E17C560C8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E1519155-0D9B-4B29-BFB4-878667478413}
