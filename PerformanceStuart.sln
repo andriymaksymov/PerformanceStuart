@@ -14,6 +14,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Query", "Query", "{D98CBEAF
 	ProjectSection(SolutionItems) = preProject
 		Query\DatabaseUsage.sql = Query\DatabaseUsage.sql
 		Query\QueryStore.sql = Query\QueryStore.sql
+		Query\RequestStats.sql = Query\RequestStats.sql
 		Query\ServerDashboard.sql = Query\ServerDashboard.sql
 		Query\SessionStats.sql = Query\SessionStats.sql
 		Query\TempdbDashboard.sql = Query\TempdbDashboard.sql
