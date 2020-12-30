@@ -131,7 +131,12 @@ begin
 	,		J02.status
 	,		J02.statement_sql_handle
 	,		J02.statement_context_id
-	,		J03.text
+	,		iif
+			(
+					J03.objectid is null
+			,		J03.text
+			,		N'exec ' + quotename(db_name(st.dbid)) + N'.' + quotename(object_schema_name(st.objectid, st.dbid)) + N'.' + quotename(object_name(st.objectid, st.dbid)) -- It will display the Stored Procedure's Name.
+			)
 	,		'request'
 	from	sys.dm_exec_sessions						S
 	join	sys.dm_exec_connections						J01
